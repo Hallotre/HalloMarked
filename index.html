@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HalloMarked</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center max-w-screen-lg">
+            <h1 class="text-2xl font-bold">HalloMarked</h1>
+            <div class="flex space-x-4">
+                <input type="text" id="search" placeholder="Search..." class="border rounded px-4 py-2">
+                <select id="sort" class="border rounded px-4 py-2">
+                    <option value="latest">Sort by Latest</option>
+                    <option value="highest">Sort by Highest Bid</option>
+                    <option value="ending">Sort by Ending Soon</option>
+                </select>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">Register</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Auction Posts -->
+    <main class="container mx-auto px-4 py-8 max-w-screen-lg">
+        <div id="auction-posts" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Auction Post -->
+            <div class="bg-white shadow rounded overflow-hidden">
+                <img src="https://via.placeholder.com/150" alt="Auction Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-bold">Auction Title</h2>
+                    <p class="text-gray-600">Highest Bid: $100</p>
+                    <p class="text-gray-600">Time Left: 2h 30m</p>
+                </div>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden">
+                <img src="https://via.placeholder.com/150" alt="Auction Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-bold">Auction Title</h2>
+                    <p class="text-gray-600">Highest Bid: $100</p>
+                    <p class="text-gray-600">Time Left: 2h 30m</p>
+                </div>
+            </div> <div class="bg-white shadow rounded overflow-hidden">
+                <img src="https://via.placeholder.com/150" alt="Auction Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-bold">Auction Title</h2>
+                    <p class="text-gray-600">Highest Bid: $100</p>
+                    <p class="text-gray-600">Time Left: 2h 30m</p>
+                </div>
+            </div> <div class="bg-white shadow rounded overflow-hidden">
+                <img src="https://via.placeholder.com/150" alt="Auction Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-bold">Auction Title</h2>
+                    <p class="text-gray-600">Highest Bid: $100</p>
+                    <p class="text-gray-600">Time Left: 2h 30m</p>
+                </div>
+            </div> <div class="bg-white shadow rounded overflow-hidden">
+                <img src="https://via.placeholder.com/150" alt="Auction Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-bold">Auction Title</h2>
+                    <p class="text-gray-600">Highest Bid: $100</p>
+                    <p class="text-gray-600">Time Left: 2h 30m</p>
+                </div>
+            </div>
+            <!-- Repeat Auction Post as needed -->
+        </div>
+    </main>
+
+    <script src="src/main.js"></script>
+</body>
+</html>
